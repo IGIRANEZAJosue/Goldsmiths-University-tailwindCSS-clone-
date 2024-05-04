@@ -27,7 +27,7 @@
    </nav>
 
    <!-- Hero Section ================================================================= -->
-   <section class=" h-[86vh] flex bg-[#FF5800]">
+   <section id="hero" class=" h-[86vh] flex bg-[#FF5800]">
       <div class="h-full w-1/2 flex justify-end items-center">
          <!-- <img class="absolute left-0" src="/images/outline.png" alt=""> -->
          <div class="flex flex-col items-start justify-center w-3/4 gap-6">
@@ -49,20 +49,24 @@
    <!-- grid section ================================================================ -->
    <section class="px-12 py-20 w-full bg-[#F6F7F7]">
       <div class="grid grid-cols-4 gap-4">
+         <!-- Grid 1 -->
          <div class=" col-span-2 row-span-2">
             <div>
                <img src="https://www.gold.ac.uk/media/images-by-section/life-on-campus/Students-outside-the-CCA_19427-(1).jpg" alt="">
             </div>
-            <div class="relative -top-4 bg-white mx-auto p-6 z-10 w-[97%] ">
-               <p class="text-center text-xl font-semibold ">Live like a local</p>
-               <p class="text-center mb-6 ">Find out more about life on our campus, including accomodaion information and local area hints and tips. </p>
-               <div class="flex items-center justify-between border-t border-gray-400 pt-4">
+            <div class="relative flex flex-col justify-between gap-14 -top-4 h-fill bg-white mx-auto p-6 z-10 w-[97%] ">
+               <div class="space-y-4">
+                  <p class="text-center text-xl font-semibold ">Live like a local</p>
+                  <p class="text-center mb-6 ">Find out more about life on our campus, including accomodaion information and local area hints and tips. </p>
+               </div>
+               <div class="flex items-center justify-between border-t border-gray-400 py-2">
                   <p class="text-red-900 text-sm font-semibold">Discover more about life on campus</p>
                   <i class="fa-solid fa-right-long"></i>   
                </div>
             </div>
          </div>
 
+         <!-- Grid 2 -->
          <div class="">
             <div class="bg-white mx-auto p-6 z-10 w-[97%] ">
                <p class="text-center font-semibold ">Study at Goldsmiths</p>
@@ -73,7 +77,9 @@
                </div>
             </div>
          </div>
-         <div class=" relative  flex flex-col gap-4 items-center bg-white p-6 -mt-44 z-10 flex-grow ">
+
+         <!-- Grid 3 -->
+         <div class=" relative flex flex-col gap-4 items-center bg-white p-6 -mt-44 z-10 flex-grow ">
             <span class="text-center w-16 h-2 bg-[#FED100] absolute top-0"></span>
             <p class="text-center font-bold text-xl w-2/3 mt-4 ">Goldsmiths, <br> Univerrsity of London</p>
             <p class="text-center ">With world-leading research and high-quality teaching, we offer undergraduate and postgraduate degrees in the arts, humanities, social sciences, business, and computing from our campus in South East London. </p>
@@ -82,6 +88,8 @@
                <i class="fa-solid fa-right-long"></i>   
             </div>
          </div>
+
+         <!-- Grid 4 -->
          <div class="col-span-2 relative w-full ">
             <div>
                <img class="object-cover object-center" src="https://www.gold.ac.uk/media/images-by-section/homepage/Scholarship_homepage.jpg" alt="">
@@ -98,12 +106,10 @@
       </div>
    </section>
 
-  
-
    <!-- search section =============================================================== -->
    <section class="flex items-start w-full gap-8 px-12 py-8 bg-[#F6F7F7]">
       <img src="/images/icon-search.svg" alt="">
-      <div class="flex flex-col gap-8">
+      <div class="flex flex-col gap-8 w-full">
          <p class=" font-bold text-[#333] text-xl">Search:</p>
          <div class="flex gap-4">
             <span class="flex gap-2">
@@ -116,12 +122,51 @@
             </span>
          </div>
          <div class="flex w-full gap-4">
-            <input class=" w-4/5 border border-black p-4 outline-none" type="text">
+            <input class=" w-full border border-black p-4 outline-none" type="text">
             <button class=" border border-black border-b-4 px-6 bg-[#fed100]">Search</button>
          </div>
       </div>
    </section>
 
+
+   <!-- Grid section 2 ================================================================ -->
+   <section>
+
+   </section>
+
+
+   <!-- footer section ================================================================ -->
+   <footer class="w-full bg-[#333333] px-12 py-12 text-white">
+      <div class="w-full flex justify-between">
+        <ul class="font-medium columns-2 gap-8 space-y-1">
+          <li>About us</li>
+          <li>Contact us</li>
+          <li>Find us</li>
+          <li>Jobs</li>
+          <li>Accessibility statement</li>
+          <li>Cookie use</li>
+          <li>Copyright and disclaimer</li>
+          <li>Slavery and human trafficking statement</li>
+        </ul>
+        <div class="flex flex-col gap-2">
+          <span class="h-1 w-8 bg-neutral-400 rounded-full"></span>
+          <p class="text-neutral-400">Admin Login</p>
+        </div>
+        <div class="flex gap-4 text-xl">
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      
+      <div class="w-full flex items-center justify-between my-8 text-xs text-neutral-400 font-semibold">
+         <p>© 2024 Goldsmiths, University Of London</p>
+         <p><a href="#hero">Back to top</a></p>
+      </div>
+
+   </footer>
 
 </body>
 </html>
