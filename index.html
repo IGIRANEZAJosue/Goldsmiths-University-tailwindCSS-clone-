@@ -5,6 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
    <link href="./src/output.css" rel="stylesheet">
+   <script src="https://cdn.tailwindcss.com"></script>
    <title>Tailwind</title>
 </head>
 <body>
@@ -130,8 +131,33 @@
 
 
    <!-- Grid section 2 ================================================================ -->
-   <section>
-
+   <section class="px-12 my-8">
+      <div class="grid grid-cols-4 grid-rows-2 gap-6">
+         <div class="col-span-2 bg-blue-600 relative">
+            <img class="object-cover" src="https://www.gold.ac.uk/media/images-by-section/about-us/news/VRLatham.jpg" alt="">
+            <div class="w-1/2 absolute space-y-6 bottom-5 -right-1 bg-white p-5">
+               <h3 class="text-xl font-semibold text-center ">Research which changes the world</h3>
+               <span class="flex items-center justify-between border-t border-gray-400 pt-4 ">
+                  <p>Case studies</p>
+                  <i class="fa-solid fa-right-long"></i>
+               </span>
+            </div>
+         </div>
+         <div class="">
+            <img src="https://www.gold.ac.uk/media/images-by-section/about-us/news/press-office/2024-news-stories/Annie-Mac-edit.jpg" alt="">
+            <div class="w-[97%] absolute space-y-6 bottom-5 -right-1 bg-white p-5">
+               <h3 class="text-md font-semibold text-center ">Research which changes the world</h3>
+               <span class="flex items-center justify-between border-t border-gray-400 pt-4 ">
+                  <p>Case studies</p>
+                  <i class="fa-solid fa-right-long"></i>
+               </span>
+            </div>
+         </div>
+         <div class="bg-blue-500">3</div>
+         <div class="bg-red-500">4</div>
+         <div class="bg-green-500">5</div>
+         <div class="col-span-2 bg-yellow-300">6</div>
+      </div>         
    </section>
 
 
